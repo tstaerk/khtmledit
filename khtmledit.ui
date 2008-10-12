@@ -1,0 +1,173 @@
+<ui version="4.0" >
+ <class>khtmledit</class>
+ <widget class="QMainWindow" name="khtmledit" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>khtmledit</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>21</y>
+     <width>800</width>
+     <height>558</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" >
+    <item row="0" column="7" >
+     <widget class="QPushButton" name="pushButton_save" >
+      <property name="text" >
+       <string>save</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="8" >
+     <widget class="QSplitter" name="splitter" >
+      <property name="orientation" >
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QTextEdit" name="ktextedit_html" >
+       <property name="whatsThis" >
+        <string>This is your wysiwyg html widget.</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="ktextedit_plain" >
+       <property name="whatsThis" >
+        <string>This is the plaintext of your html file.</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="4" >
+     <widget class="QPushButton" name="pushButton_bold" >
+      <property name="statusTip" >
+       <string>This makes your selection in the upper widget bold.</string>
+      </property>
+      <property name="text" >
+       <string>Bold</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" >
+     <widget class="QPushButton" name="pushButton_h1" >
+      <property name="whatsThis" >
+       <string>This makes a heading from your selection in the upper widget.</string>
+      </property>
+      <property name="text" >
+       <string>H1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <widget class="QPushButton" name="pushButton_h2" >
+      <property name="text" >
+       <string>H2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" >
+     <widget class="QPushButton" name="pushButton_h3" >
+      <property name="text" >
+       <string>H3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" >
+     <widget class="QPushButton" name="pushButton_h4" >
+      <property name="text" >
+       <string>H4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" >
+     <widget class="QPushButton" name="pushButton_h5" >
+      <property name="text" >
+       <string>H5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2" >
+     <widget class="QPushButton" name="pushButton_h6" >
+      <property name="text" >
+       <string>H6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5" >
+     <widget class="QPushButton" name="pushButton_italic" >
+      <property name="text" >
+       <string>Italic</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4" >
+     <widget class="QPushButton" name="pushButton_underlined" >
+      <property name="text" >
+       <string>Underlined</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTest" >
+    <property name="title" >
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad" />
+    <addaction name="actionSave" />
+    <addaction name="actionSave_as" />
+    <addaction name="actionQuit" />
+   </widget>
+   <addaction name="menuTest" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>579</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionLoad" >
+   <property name="text" >
+    <string>Load...</string>
+   </property>
+  </action>
+  <action name="actionSave" >
+   <property name="text" >
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as" >
+   <property name="text" >
+    <string>Save as...</string>
+   </property>
+  </action>
+  <action name="actionQuit" >
+   <property name="text" >
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

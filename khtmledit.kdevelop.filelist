@@ -1,0 +1,10 @@
+# KDevelop Custom Project File List
+CMakeLists.txt
+CMakeTmp
+CMakeTmp/check_qt_visibility.cpp
+Makefile
+khtmledit.cpp
+khtmledit.h
+khtmledit_automoc.cpp
+main.cpp
+ui_khtmledit.h
