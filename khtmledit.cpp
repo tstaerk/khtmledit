@@ -212,6 +212,22 @@ void khtmledit::slotbuttonfatclicked()
   kDebug() << "Leaving khtmledit::slotbuttonfatclicked";
 }
 
+void khtmledit::slotbuttonunderlinedclicked()
+{
+  kDebug() << "Entering function";
+  if ( khtmleditui->ktextedit_html->fontUnderline() ) khtmleditui->ktextedit_html->setFontUnderline( false );
+  else khtmleditui->ktextedit_html->setFontUnderline( true );
+  kDebug() << "Leaving function";
+}
+
+void khtmledit::slotbuttonitalicclicked()
+{
+  kDebug() << "Entering function";
+  if ( khtmleditui->ktextedit_html->fontItalic() ) khtmleditui->ktextedit_html->setFontItalic( false );
+  else khtmleditui->ktextedit_html->setFontItalic( true );
+  kDebug() << "Leaving function";
+}
+
 void khtmledit::slotbuttonh1clicked()
 {
   kDebug() << "Entering khtmledit::slotbuttonfatclicked";
@@ -282,22 +298,6 @@ void khtmledit::slotbuttonh6clicked()
   khtmleditui->ktextedit_html->textCursor().removeSelectedText();
   khtmleditui->ktextedit_html->textCursor().insertHtml(text.replace(" ","&nbsp;"));
   kDebug() << "Leaving khtmledit::slotbuttonfatclicked";
-}
-
-void khtmledit::slotbuttonunderlinedclicked()
-{
-  kDebug() << "Entering function";
-  if ( khtmleditui->ktextedit_html->fontUnderline() ) khtmleditui->ktextedit_html->setFontUnderline( false );
-  else khtmleditui->ktextedit_html->setFontUnderline( true );
-  kDebug() << "Leaving function";
-}
-
-void khtmledit::slotbuttonitalicclicked()
-{
-  kDebug() << "Entering function";
-  if ( khtmleditui->ktextedit_html->fontItalic() ) khtmleditui->ktextedit_html->setFontItalic( false );
-  else khtmleditui->ktextedit_html->setFontItalic( true );
-  kDebug() << "Leaving function";
 }
 
 void khtmledit::slotfilechanged()
