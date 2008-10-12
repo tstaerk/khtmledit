@@ -298,14 +298,10 @@ void khtmledit::slotbuttonunderlinedclicked()
 
 void khtmledit::slotbuttonitalicclicked()
 {
-  kDebug() << "Entering khtmledit::slotbuttonfatclicked";
-  QString text=khtmleditui->ktextedit_html->textCursor().selectedText();
-  kDebug() << "text =" << text;
-  text=QString("%1%2%3").arg("<i>").arg(text).arg("</i>");
-  kDebug() << "text =" << text;
-  khtmleditui->ktextedit_html->textCursor().removeSelectedText();
-  khtmleditui->ktextedit_html->textCursor().insertHtml(text.replace(" ","&nbsp;"));
-  kDebug() << "Leaving khtmledit::slotbuttonfatclicked";
+  kDebug() << "Entering function";
+  if ( khtmleditui->ktextedit_html->fontItalic() ) khtmleditui->ktextedit_html->setFontItalic( false );
+  else khtmleditui->ktextedit_html->setFontItalic( true );
+  kDebug() << "Leaving function";
 }
 
 void khtmledit::slotfilechanged()
